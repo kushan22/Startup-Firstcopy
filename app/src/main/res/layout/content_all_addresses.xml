@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.socialbuy.firstcopy.AllAddresses"
+    android:background="#EEEEEE"
+    tools:showIn="@layout/activity_all_addresses">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardviewallAddresses1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            >
+
+            <ImageButton
+                android:id="@+id/ibAddAddress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_add_black_24dp"
+                android:background="@android:color/transparent"
+                android:padding="20dp"
+                />
+
+            <TextView
+                android:id="@+id/tvAddAddress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:text="Add a new address"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:textSize="18sp"
+                android:textColor="#1565C0"
+                />
+
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvTapOnAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardviewallAddresses1"
+        android:text="Tap on the address to select"
+        android:gravity="center"
+        android:padding="5dp"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvAllAddresses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTapOnAddress"
+        android:layout_marginTop="5dp"
+        android:layout_above="@+id/btDeliverHere"
+        />
+
+    <Button
+        android:id="@+id/btDeliverHere"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Deliver Here"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        />
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        />
+</RelativeLayout>

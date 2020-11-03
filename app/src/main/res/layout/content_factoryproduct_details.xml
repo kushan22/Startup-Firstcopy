@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.socialbuy.firstcopy.FactoryproductDetails"
+    android:background="#BDBDBD"
+    tools:showIn="@layout/activity_factoryproduct_details">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                >
+            <TextView
+                android:id="@+id/tvFactoryNameDetails"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Name of the product"
+                android:layout_weight="8"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:id="@+id/tvFactoryProductPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Price of the Product"
+                android:layout_weight="2"
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:textColor="#000"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="16sp"/>
+                <!--android:layout_marginTop="5dp"-->
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+
+            <TextView
+                android:id="@+id/tvSizeTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Select Size"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:gravity="left"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:textColor="#000"
+                />
+
+                <TextView
+                    android:id="@+id/tvReturnPolicy"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Return Policy"
+                    android:textSize="16sp"
+                    android:gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#D32F2F"
+                    />
+
+            </LinearLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:foregroundGravity="center"
+                android:layout_marginLeft="5dp"
+                />
+
+            <Button
+                android:id="@+id/btBuyNowFactoryProduct"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:textColor="#fff"
+                android:text="Buy Now"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp"
+                />
+
+
+
+
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="25dp"
+            android:background="#fff"
+            >
+
+            <android.support.v4.view.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:id="@+id/viewPagerBuyers"
+
+                />
+
+
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+            <TextView
+                android:id="@+id/tvProductDetailsHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Product Details"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                />
+
+                <TextView
+                    android:id="@+id/tvFactoryDescDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Description of the product comes here"
+                    android:textSize="16sp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        />
+
+
+
+
+
+
+</RelativeLayout>

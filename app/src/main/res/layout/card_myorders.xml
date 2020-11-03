@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvOrderStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivered"
+            android:textSize="20sp"
+            android:textAllCaps="true"
+            android:padding="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#66BB6A"
+            android:layout_centerHorizontal="false"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/tvOrderNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order No: 123456789"
+            android:textSize="16sp"
+            android:textAllCaps="true"
+            android:padding="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tvOrderStatus"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/tvDatePlaced"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvOrderStatus"
+            android:text="Placed on November 8, 2017"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tvPriceofItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rs.899"
+            android:layout_below="@+id/tvDatePlaced"
+            android:layout_marginLeft="5dp"
+            android:paddingLeft="5dp"
+            />
+
+        <View
+            android:id="@+id/orderView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/tvPriceofItem"
+            android:background="#BDBDBD"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tvMyorderProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orderView"
+            android:text="Product Name"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:id="@+id/tvMyOrderProductSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvMyorderProductName"
+            android:text="Product Size"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="18sp"
+            />
+
+        <ImageView
+            android:id="@+id/ivOrderImage"
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:layout_below="@+id/tvMyOrderProductSize"
+            android:src="@drawable/backgroundimage"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            />
+
+
+        <Button
+            android:id="@+id/btCancelOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ivOrderImage"
+            android:layout_alignEnd="@+id/orderView"
+            android:layout_alignRight="@+id/orderView"
+            android:background="#D32F2F"
+            android:padding="5dp"
+            android:text="Cancel Order"
+            android:textColor="#fff" />
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

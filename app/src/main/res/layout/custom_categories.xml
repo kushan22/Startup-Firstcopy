@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Category"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000"
+        />
+
+    <RadioGroup
+        android:id="@+id/rgCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+
+        >
+
+        <RadioButton
+            android:id="@+id/rbEyewear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:button="@null"
+            android:drawableRight="@android:drawable/btn_radio"
+            android:buttonTint="#000"
+            android:gravity="left|center"
+            android:text="EYEWEAR"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+
+            />
+
+        <RadioButton
+            android:id="@+id/rbFootwear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:buttonTint="#000"
+            android:gravity="left|center"
+            android:text="FOOTWEAR"
+            android:button="@null"
+            android:drawableRight="@android:drawable/btn_radio"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rbBags"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:buttonTint="#000"
+            android:gravity="left|center"
+            android:button="@null"
+            android:drawableRight="@android:drawable/btn_radio"
+            android:layout_marginLeft="20dp"
+            android:text="BAG"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rbWatches"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:buttonTint="#000"
+            android:gravity="left|center"
+            android:button="@null"
+            android:drawableRight="@android:drawable/btn_radio"
+            android:layout_marginLeft="20dp"
+            android:text="WATCH"
+            android:textSize="20sp" />
+
+
+    </RadioGroup>
+
+
+</LinearLayout>

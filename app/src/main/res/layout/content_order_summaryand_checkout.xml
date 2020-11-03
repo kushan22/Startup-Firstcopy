@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.socialbuy.firstcopy.OrderSummaryandCheckout"
+    tools:showIn="@layout/activity_order_summaryand_checkout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+
+   >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewOrderSummary1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutOrderandSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tvBuyerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name Comes Here"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:layout_margin="5dp"
+                android:textColor="@color/colorPrimary"
+                />
+
+            <TextView
+                android:id="@+id/tvBuyerAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address Comes Here"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:layout_margin="5dp"
+                />
+
+            <TextView
+                android:id="@+id/tvBuyerNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Number Comes Here"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:layout_margin="5dp"
+                />
+
+            <TextView
+                android:id="@+id/tvBuyerPincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pincode comes here"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:layout_margin="5dp"
+                />
+
+
+
+        </LinearLayout>
+
+            <Button
+                android:id="@+id/btChangeorAddaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/linearLayoutOrderandSummary"
+                android:padding="10dp"
+                android:text="Change or Add Address"
+                android:background="@color/colorPrimary"
+                android:textColor="#fff"
+                />
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="invisible"
+                />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewOrderSummary2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardViewOrderSummary1"
+        android:layout_marginTop="20dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/tvProductNameOrderAndSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:padding="5dp"
+                android:text="Name Comes Here"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvProductPriceOrderandSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvProductNameOrderAndSummary"
+                android:padding="5dp"
+                android:text="Price Comes Here"
+                android:textColor="#000"
+                android:layout_marginLeft="5dp"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvSizeOrderandSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvProductPriceOrderandSummary"
+                android:layout_alignStart="@+id/tvProductPriceOrderandSummary"
+                android:layout_below="@+id/tvProductPriceOrderandSummary"
+                android:padding="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="Size comes here"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/ivProductImageOrderandSummary"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/tvSizeOrderandSummary"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/bag"
+                />
+
+            <TextView
+                android:id="@+id/tvExpectedDeliveryOrderandSummary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivProductImageOrderandSummary"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:text="Expected Delivery Time (5-7 days)"
+                android:textSize="18sp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="invisible"
+                />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+  <android.support.v7.widget.CardView
+      android:id="@+id/cardViewOrderSummary3"
+      android:layout_below="@+id/cardViewOrderSummary2"
+      android:layout_marginTop="20dp"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+
+      <LinearLayout
+          android:id="@+id/linearLayoutPaymentDetails"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          >
+
+      <TextView
+          android:id="@+id/tvToPayHeader"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="To Pay"
+          android:layout_marginLeft="10dp"
+          android:textSize="16sp"
+          android:layout_marginTop="20dp"
+          android:textColor="#000"
+          />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:weightSum="10"
+          >
+
+
+          <TextView
+              android:id="@+id/tvSubTotalHeader"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="8"
+              android:text="Sub Total"
+              android:layout_marginTop="10dp"
+              android:textSize="18sp"
+              android:textColor="#000"
+              android:layout_marginLeft="10dp"
+              />
+
+          <TextView
+              android:id="@+id/tvSubTotal"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="2"
+              android:text="Rs 537"
+              android:textSize="18sp"
+              android:layout_marginTop="10dp"
+              android:textColor="#000"
+              android:gravity="end"
+              android:layout_marginRight="10dp"
+              />
+
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:weightSum="10"
+          >
+
+
+          <TextView
+              android:id="@+id/tvDeliveryCostHeader"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="8"
+              android:text="Delivery (Within 7 days)"
+              android:layout_marginTop="10dp"
+              android:textSize="18sp"
+              android:textColor="#000"
+              android:layout_marginLeft="10dp"
+              />
+
+          <TextView
+              android:id="@+id/tvDeliveryCost"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="2"
+              android:text="Rs 0"
+              android:textSize="18sp"
+              android:textColor="#000"
+              android:layout_marginTop="10dp"
+              android:gravity="end"
+              android:layout_marginRight="10dp"
+              />
+
+      </LinearLayout>
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="#BDBDBD"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:layout_marginTop="10dp"
+          />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:weightSum="10"
+          >
+
+
+          <TextView
+              android:id="@+id/tvTotalHeader"
+              android:layout_width="0dp"
+              android:textColor="#000"
+              android:layout_height="wrap_content"
+              android:layout_weight="8"
+              android:text="Total"
+              android:layout_marginTop="10dp"
+              android:textSize="18sp"
+              android:layout_marginLeft="10dp"
+              />
+
+          <TextView
+              android:id="@+id/tvTotal"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="2"
+              android:text="Rs 537"
+              android:textSize="18sp"
+              android:layout_marginTop="10dp"
+              android:textColor="#000"
+              android:gravity="end"
+              android:layout_marginRight="10dp"
+              />
+
+      </LinearLayout>
+      </LinearLayout>
+
+          <Button
+              android:id="@+id/btProceedtoCheckout"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/linearLayoutPaymentDetails"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:layout_marginBottom="10dp"
+              android:padding="5dp"
+              android:text="Proceed to checkout"
+              android:textColor="#fff"
+              android:background="@color/colorPrimary"
+              android:layout_marginTop="20dp"
+              />
+
+
+
+      </RelativeLayout>
+
+
+  </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>
+</ScrollView>

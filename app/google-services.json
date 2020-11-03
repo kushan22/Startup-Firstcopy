@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "498364334504",
+    "firebase_url": "https://firstcopy-d60e7.firebaseio.com",
+    "project_id": "firstcopy-d60e7",
+    "storage_bucket": "firstcopy-d60e7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:498364334504:android:6ee0a462699d5a90",
+        "android_client_info": {
+          "package_name": "com.socialbuy.firstcopy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "498364334504-q5256ujt0geosl4s3idln2onspdttudf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEPSi06qVZzPC5UDXg-COJow_c-Jhk4JA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

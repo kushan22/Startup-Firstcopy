@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.socialbuy.firstcopy.SearchActivity"
+    tools:showIn="@layout/activity_search">
+
+    <!--<TextView-->
+        <!--android:id="@+id/tvTotalItems"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Items: "-->
+        <!--android:textSize="18sp"-->
+        <!--android:gravity="left"-->
+        <!--android:padding="5dp"-->
+        <!--/>-->
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvProducts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        >
+
+        <TextView
+            android:id="@+id/tvTrendingSearches"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trending Searches"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/colorAccent"
+            />
+
+        <TextView
+            android:id="@+id/tvSuperstar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Superstar"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"
+            android:padding="5dp"
+            />
+        <TextView
+            android:id="@+id/tvAdidas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Adidas"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            />
+        <TextView
+            android:id="@+id/tvJordan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jordan"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            />
+        <TextView
+            android:id="@+id/tvNike"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nike"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            />
+        <TextView
+            android:id="@+id/tvRayban"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rayban"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            />
+        <TextView
+            android:id="@+id/tvYeezy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yeezy"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            />
+        <TextView
+            android:id="@+id/tvRado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rado"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            />
+        <TextView
+            android:id="@+id/tvRolex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rolex"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            />
+        <TextView
+            android:id="@+id/tvJbl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="JBL"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            />
+        <TextView
+            android:id="@+id/tvGucci"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gucci"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            />
+
+
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/ibNoNetwork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_sync_problem_black_24dp"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="180dp"
+        android:visibility="invisible"
+        />
+    <TextView
+        android:id="@+id/tvNoNetwork"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ibNoNetwork"
+        android:text="It seems you're not connected to the internet - we can't find any network!"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:textColor="#455A64"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:visibility="invisible"
+
+        />
+
+    <Button
+        android:id="@+id/btRetry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNoNetwork"
+        android:layout_centerHorizontal="true"
+        android:text="Retry"
+        android:padding="5dp"
+        android:background="@color/colorAccent"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:layout_marginTop="30dp"
+        android:visibility="invisible"
+
+        />
+
+    <Button
+        android:id="@+id/btFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        android:text="Filter"
+        android:textColor="#fff"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+
+        />
+
+
+
+
+</RelativeLayout>

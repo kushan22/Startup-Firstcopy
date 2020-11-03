@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<item-->
+        <!--android:id="@+id/instahop"-->
+        <!--android:icon="@drawable/ic_star_border_black_24dp"-->
+        <!--android:title="Insta Shop"-->
+
+        <!--/>-->
+    <item
+        android:id="@+id/factoryshop"
+        android:icon="@drawable/ic_view_quilt_black_24dp"
+        android:title="Factory Shop"/>
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_person_outline_black_24dp"
+        android:title="Profile"/>
+
+</menu>

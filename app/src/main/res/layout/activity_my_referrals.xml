@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.socialbuy.firstcopy.MyReferrals">
+
+    <!--<android.support.design.widget.AppBarLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:theme="@style/AppTheme.AppBarOverlay">-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tvReferralCodeHeader"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Your Referral Code"-->
+                <!--android:gravity="center"-->
+                <!--android:textSize="18sp"-->
+                <!--android:padding="5dp"-->
+                <!--android:textColor="#fff"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--/>-->
+            <!--<TextView-->
+                <!--android:id="@+id/tvReferralCodeOption"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/tvReferralCodeHeader"-->
+                <!--android:textSize="14sp"-->
+                <!--android:textColor="#fff"-->
+                <!--android:text="(Share with your friends to get 10% off on next order)"-->
+                <!--android:gravity="center"-->
+                <!--android:padding="5dp"-->
+                <!--/>-->
+            <!--<TextView-->
+                <!--android:id="@+id/tvReferralCode"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="RXAD12ab"-->
+                <!--android:layout_below="@+id/tvReferralCodeOption"-->
+                <!--android:gravity="center"-->
+                <!--android:textSize="24sp"-->
+                <!--android:textColor="#fff"-->
+                <!--android:padding="5dp"-->
+                <!--/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tvReferralCondition"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="(You both get 10% off after their first successful order)"-->
+                <!--android:layout_below="@+id/tvReferralCode"-->
+                <!--android:padding="5dp"-->
+                <!--android:gravity="center"-->
+                <!--android:textColor="#fff"-->
+                <!--/>-->
+
+            <!--<Button-->
+                <!--android:id="@+id/btShareReferal"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="#fff"-->
+                <!--android:layout_below="@id/tvReferralCondition"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:text="Share"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:background="#000"-->
+                <!--android:padding="5dp"-->
+                <!--android:layout_marginBottom="20dp"-->
+                <!--/>-->
+
+
+
+
+
+        <!--</RelativeLayout>-->
+
+        <!--&lt;!&ndash;<android.support.v7.widget.Toolbar&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/toolbar"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="?attr/actionBarSize"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="?attr/colorPrimary"&ndash;&gt;-->
+            <!--&lt;!&ndash;app:popupTheme="@style/AppTheme.PopupOverlay" />&ndash;&gt;-->
+
+    <!--</android.support.design.widget.AppBarLayout>-->
+
+    <!--<include layout="@layout/content_my_referrals" />-->
+
+    <!--&lt;!&ndash;<android.support.design.widget.FloatingActionButton&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/fab"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_gravity="bottom|end"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_margin="@dimen/fab_margin"&ndash;&gt;-->
+        <!--&lt;!&ndash;app:srcCompat="@android:drawable/ic_dialog_email" />&ndash;&gt;-->
+
+</android.support.design.widget.CoordinatorLayout>

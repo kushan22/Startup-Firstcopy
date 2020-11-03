@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Factory Price</string>
+    <string name="title_activity_home_screen">HomeScreen</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_browse">Browse</string>
+    <string name="title_activity_product_details">ProductDetails</string>
+    <string name="title_activity_wish_list">WishList</string>
+    <string name="title_activity_filter">Filter</string>
+    <string name="title_activity_basehome">Basehome</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_factoryproduct_details">FactoryproductDetails</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_signin">Signin</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="Rs">\u20B9</string>
+    <string name="title_activity_shippinginfo">Shippinginfo</string>
+    <string name="title_activity_myorders">Myorders</string>
+    <string name="title_activity_versioncheck">Versioncheck</string>
+    <string name="title_activity_my_referrals">MyReferrals</string>
+    <string name="title_activity_factory_shop_browse">FactoryShopBrowse</string>
+    <string name="return_policy">We want you to be completely satisfied with your purchase on Factory Price.
+Every purchase from Factory Price comes with a 100% fair deal guarantee. In case the product you receive is damaged or a wrong item(s) is sent you, you receive a full refund after proper verifications are done by our investigation team.
+
+We wish to serve you in the best and fair manner possible. In case you have any issues regarding your order or the product you’ve received, feel free to reach us at mail@factoryprice.co.in
+
+We aim to process all requests within 72 hours upon receiving. Refunds are issued back to the customer within 4-7 days.
+
+In the event that a gift card is applied to an order and that order is refunded for any reason, any gift cards used in that order will not be refunded.
+
+At this time, Factory Price cannot refund, reimburse, cover, or otherwise be responsible for any shipping fees incurred during the delivery. This also includes any customs taxes or VAT as well as any return shipping costs you may incur in the refund process.</string>
+    <string name="title_activity_address">Address</string>
+    <string name="title_activity_order_summaryand_checkout">OrderSummaryandCheckout</string>
+    <string name="title_activity_all_addresses">AllAddresses</string>
+
+</resources>

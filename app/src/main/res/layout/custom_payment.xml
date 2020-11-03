@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/tvPaymentHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please Select a Payment Mode"
+        android:textSize="18sp"
+        android:padding="5dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        />
+
+    <RadioGroup
+        android:id="@+id/rgPaymentGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbOnline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Online"
+            android:textSize="16sp"
+            android:button="@null"
+            android:drawablePadding="30dp"
+            android:drawableRight="@android:drawable/btn_radio"
+            android:layout_marginLeft="20dp"
+
+            />
+
+        <RadioButton
+            android:id="@+id/rbCod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cash on Delivery (COD)"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:button="@null"
+            android:drawablePadding="30dp"
+            android:drawableRight="@android:drawable/btn_radio"
+            android:layout_marginLeft="20dp"
+            />
+
+
+    </RadioGroup>
+
+</LinearLayout>

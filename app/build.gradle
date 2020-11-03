@@ -1,0 +1,73 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId "com.socialbuy.firstcopy"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 18
+        versionName "2.0.9"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+
+
+}
+
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
+    implementation 'com.android.support:cardview-v7:26.1.0'
+    implementation 'com.android.support:design:26.1.0'
+    implementation('com.mcxiaoke.volley:library-aar:1.0.0') {
+        exclude group: 'org.apache.httpcomponents'
+    }
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    //implementation 'com.weiwangcn.betterspinner:library-material:1.1.0'
+//    implementation 'de.hdodenhof:circleimageview:2.1.0'
+//    implementation('com.crashlytics.sdk.android:crashlytics:17.2.2@aar') {
+//        transitive = true
+//    }
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.google.firebase:firebase-core:11.8.0'
+    implementation 'com.android.support:support-v4:26.1.0'
+    implementation 'com.android.support:multidex:1.0.2'
+    implementation 'com.google.android.gms:play-services-location:11.8.0'
+    implementation 'com.instamojo:android-sdk:+'
+    testImplementation 'junit:junit:4.12'
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+apply plugin: 'com.google.gms.google-services'
